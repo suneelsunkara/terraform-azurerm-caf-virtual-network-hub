@@ -21,6 +21,7 @@ module "vnet-hub" {
   log_analytics_logs_retention_in_days = 30
 
   # Adding Standard DDoS Plan, and custom DNS servers (Optional)
+  create_ddos_plan = false
   dns_servers = []
 
   # Multiple Subnets, Service delegation, Service Endpoints, Network security groups
